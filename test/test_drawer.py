@@ -12,5 +12,5 @@ if __name__ == '__main__':
     pic_filename = os.path.join(pic_path, pic_name)
     pic = Image.open(pic_filename)
     pic = pic.convert('RGB')
-    drawer = GeneticDrawer(pic, n_circles=256, n_generations=1000000, path='C:/nba/')
+    drawer = GeneticDrawer(pic, n_circles=256, n_generations=10e6)
     drawer.draw()
